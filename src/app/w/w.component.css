@@ -1,0 +1,149 @@
+
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+    color: #333;
+}
+
+
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(135deg, rgba(47, 56, 59, 0.8), rgba(47, 56, 59, 0.6)), url('https://wallpapers.com/images/featured/professional-powerpoint-background-ntxue2i1xkpyld5t.jpg')no-repeat center center/cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 20rem;
+    animation: fadeInDown 5s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    animation: fadeInUp 5s ease;
+}
+
+.hero-content .btn {
+    background-color:transparent;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-color:#d879ca;
+    border-radius: 55px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    animation: fadeInUp 5s ease;
+}
+
+.hero-content .btn:hover {
+    background: #d879ca;
+}
+
+/* Features Section Styling */
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 0;
+    background: #fff;
+}
+
+.feature {
+    text-align: center;
+    width: 30%;
+}
+
+.feature h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+}
+
+
+
+.center-logo-container {
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  cursor: pointer; /* Indicates clickable element */
+}
+
+.center-logo {
+  width: 430px; /* Adjust the size as needed */
+  height: 300px; /* Adjust the size as needed */
+  object-fit: cover;
+  animation: fadeInDown 5s ease;
+}

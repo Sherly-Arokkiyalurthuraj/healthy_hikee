@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthyHike_DashBoard</title> 
+  
+
+</head>
+<body >
+    <!-- src/app/app.component.html -->
+ <header id="header" class="d-flex flex-column justify-content-center">
+
+  <nav id="navbar" class="navbar nav-menu">
+  <ul>
+    <li><a href="/home"class="nav-link scrollto ">  <i class="bi bi-house"></i>
+      <span>Home</span></a></li> 
+    <li><a href="/dashboard" class="nav-link scrollto"><i class="bi bi-clipboard-pulse"></i>
+      <span>Dashboard</span></a></li>
+    <li><a href="/profile" class="nav-link scrollto"><i class="bi bi-universal-access"></i>
+      <span>Yoga</span></a></li>
+    <li><a href="/workouts" class="nav-link scrollto"><i class="bi bi-battery-charging"></i>
+      <span>Workouts</span></a></li>
+    <li><a href="/nutrition" class="nav-link scrollto"><i class="bi bi-heart-pulse-fill"></i>
+      <span>Nutrition</span></a></li>
+      <li><a href="/w" class="nav-link scrollto"><i class="bi bi-power"></i>
+        <span>Log out</span></a></li>
+  </ul>
+</nav></header>
+   <h1  class="head">Dashboard</h1>  <div class="right-content">
+    <div class="sunburst">
+        <p>   "Early to bed and early to rise makes a man healthy, wealthy, and wise."</p>
+    </div>
+</div>
+    <section class="timeline-container">
+        <div class="timeline-wrapper">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon" viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+          
+            <div class="timeline-content">
+              <h2>About</h2>
+              <p>This fitness tracker provides personalized recommendations for a healthy and fit lifestyle, all without needing any input from you.</p>
+            </div>
+          </div>
+        
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon" viewBox="0 0 24 24">
+                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <h2>Body Mass Index</h2>
+              <p>To start, you need to calculate your Body Mass Index (BMI), which assesses your overall body status and categorizes it as underweight, normal, overweight, or obese. </p>
+            </div> 
+              
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon" viewBox="0 0 24 24">
+                <circle cx="12" cy="5" r="3"></circle>
+                <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <div class="container">
+                <h1>You can calculate your BMI below:</h1><p>Enter your height and weight:</p>
+              
+                <div>
+                  <label for="height">Height (cm):</label>
+                  <input id="height" type="number" />
+                </div>
+              
+                <div>
+                  <label for="weight">Weight (kg):</label>
+                  <input id="weight" type="number" />
+                </div>
+              
+                <button id="calculateButton">Calculate</button>
+              
+                <div id="result"></div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="icon" viewBox="0 0 24 24">
+                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+            </div>
+            <div class="timeline-content">
+              <h2>The BMI results</h2>
+              <p>The Results convey these standards:<br><b>Underweight   = less than 18.5<br>
+                Normal weight = 18.5 to 24.9 <br>
+                Overweight    = 25 to 29.9 <br>
+                Obesity       = BMI of 30 or greater</b><br>
+              You have your scheduled workouts and diet plans for all the above four categories...<br>Additionaly you have your Yoga recommendations to perform daily regardless of your weight but to get a peaceful mind.</p>
+            </div>            
+          </div>
+        </div>
+       
+      </section>
+      <div class="d-flex justify-content-center">
+        <a class="btn btn-info mx-2" href="/home" role="button" style="text-decoration: none;"><i class="bi bi-arrow-left"></i><span>Way back to Home</span></a>
+      <a class="btn btn-primary mx-2" href="/workouts"  role="button" style="text-decoration: none;"> Workouts</a>
+        <a class="btn btn-primary mx-2" href="/nutrition" role="button" style="text-decoration: none;"> Diet Plan</a>
+        <a class="btn btn-primary mx-2" href="/profile" role="button" style="text-decoration: none;">Yoga Routine</a>
+      </div>
+      
+</body>
+</html>
